@@ -1,0 +1,344 @@
+/* 
+Project Name: Paper Boy
+Client: Jeffery Fulton
+Author: Selome Welday
+*/
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; 
+
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+  float: right;
+}
+
+.alignleft {
+  float: left;
+}
+/*********************s*********************
+/* BASE STYLES                   
+/*****************************************
+#hamburger {
+    width: 60px;
+    cursor: pointer;
+    border-radius: 4px;
+    float: right;
+    display:block;
+  }**/
+    #hamburger {
+    width: 60px;
+    cursor: pointer;
+    border-radius: 4px;
+    float: right;
+    display:block;
+    margin-top:2em;
+  }
+body{
+  background: #F2F2F2;
+  font-family: 'Lato', sans-serif;
+}
+.advertisement{
+    color: white;
+    min-height: 600px;
+    background-image: url(../images/HeaderBackground.jpg);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.brandingwrapper{
+    width: 34em;
+    float: right;
+    display:block;
+    margin-top:10em;
+}
+.logo {
+    padding-bottom: 1em;
+}
+.advertisement p {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 1em;
+}
+.downloadgoogle {
+    width: 13em;
+    padding-top: 2em;
+    margin-right:1em;
+}
+.downloadapple {
+  width: 13em;
+  margin-left: 1em;
+}
+.prototype1 {
+  padding-left: 8em;
+  padding-top: 22em;
+  position: absolute;
+  width: 27em;
+}
+.description {
+    margin-left: 34em;
+    margin-top: 6em;
+    margin-right: 4em;
+    margin-bottom: 12em;
+}
+.description h1 {
+    font-size: 2em;
+    padding-bottom: 1.6em;
+}
+.description p {
+    padding-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: thin;
+}
+.description .input {
+  font-size:1.2em;
+    background-color: #E7CC1E;
+    margin-top: 2em;
+    padding: 1em 3em;
+    border-radius: 10px;
+    float: right;
+}
+.featureswrapper{
+    background-color: #E7CC1E;
+}
+.features{
+    text-align: center;
+    display: inline-block;
+    width: 33%;
+    padding: 3em 0;
+}
+.features img {
+    padding-bottom: 1em;
+}
+.features h2 {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.features p{
+  padding:1em;
+}
+.bigblock{
+  margin: 6em 0 7em 12em;
+  width: 58em;
+}
+.prototypemobile1{
+  display:none;
+}
+.prototypemobile2{
+  display:none;
+}
+.testimonialwrapper {
+    min-height: 40em;
+    background-image: url(../images/testimonialBackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.testimonialslily {
+    background: #fff;
+    width: 50%;
+    padding: 6.7em;
+    color: black;
+}
+.testimonialslily img {
+    position: absolute;
+}
+.testimonialslily p {
+    margin-left: 8em;
+    margin-top: 1.8em;
+    font-style: italic;
+    text-align: center;
+}
+.testimonialsjeff {
+  float: right;
+  background: #fff;
+  width: 50%;
+  padding: 6.7em;
+  color: black;
+}
+.testimonialsjeff img {
+  position: absolute;
+}
+.testimonialsjeff p {
+  margin-left: 8em;
+  margin-top: 1.8em;
+  font-style: italic;
+  text-align: center;
+}
+.downloadnow {
+  text-align: center;
+  margin: 4em;
+}
+footer{
+  background: #E7CC1E;
+  font-style: bold;
+  padding: 2em;
+}
+footer ul{
+  text-align:center;
+}
+footer ul li{
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.2em;
+    color:black;
+}
+.extra{
+  display:none;
+}
+
+span{
+  font-weight:bold;
+  font-size:1.8em;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 40em){
+  .logo{
+    width:100%;
+    padding:1.4em;
+font-weight:lighter;
+  }
+  .brandingwrapper .downloadapple{
+    width:9em;
+  }
+  .brandingwrapper .downloadgoogle{
+    width:12em;
+  }
+  .brandingwrapper p{
+    font-size:2em;
+  }
+  .extra{
+    display:block;
+    width:100%;
+    padding-left:4em;
+    padding-right:4em;
+    padding-top:1em;
+  }
+  .brandingwrapper{
+    width: 100%;
+    float: right;
+    display:block;
+    margin-top:5em;
+    text-align:center;
+}
+.prototype1{
+  display:none;
+}
+.description .input {
+padding:0;
+float:none;
+font-size:1em;
+padding:1em;
+}
+.description p{
+font-size:1em;
+}
+.description{
+  text-align:center;
+  width:100%;
+  margin:0;
+  padding:0;
+  margin-top:1em;
+  margin-bottom:1em;
+  padding-left:1em;
+  padding-right:1em;
+}
+    
+  .brandingwrapper{
+    position:relative;
+  }
+.featureswrapper{
+    background-color: #F2F2F2;
+    width:100%;
+}
+.features {
+    display:block;
+    width: 100%;
+    padding: 3em 0;
+    background: #E7CC1E;
+    margin-bottom: 1em;
+}
+.testimonialwrapper{
+  background-image: none;
+  min-height:0;
+}
+.testimonialslily{
+  padding:2em;
+  width:100%;
+  padding: 2em;
+  margin-bottom: 1em;
+}
+.testimonialsjeff{
+  width:100%;
+  padding:2em;
+  margin-bottom: 1em;
+}
+.downloadnow{
+  margin: 1em;
+}
+.downloadnow img{
+width:9em;
+margin-left:0;
+}
+.bigblock{
+display:none;
+}
+.prototypemobile1 {
+    display: block;
+    width: 100%;
+    padding: 20px;
+}
+.prototypemobile2 {
+    display: block;
+    width: 100%;
+    padding-left: 10px;
+}
+footer{
+  font-size:.4em;
+}
+
+}
+
+}
